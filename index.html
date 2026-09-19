@@ -25,14 +25,14 @@
         <p style="margin-bottom: 3px">Tempat Lahir</p>
         <p style="margin-bottom: 3px">Tanggal Lahir</p>
 
-        <select id="kota" name="kota" size="1" style="width: 150px" required>
+        <select id="kota" name="kota" size="1" style="max-width: 150px; width:90%" required>
             <option value="" disabled selected>--Pilih Kota--</option>
             <option value="jakarta">Jakarta</option>
             <option value="surabaya">Surabaya</option>
             <option value="bandung">Bandung</option>
             <option value="sidoarjo">Sidoarjo</option>
         </select>
-        <input type="date" id="tgl_lahir" name="tgl_lahir" style="width:150px" required>
+        <input type="date" id="tgl_lahir" name="tgl_lahir" style="max-width:150px" required>
         </div>
     
         <p style="margin-bottom: 3px">Jenis Kelamin</p>
@@ -59,14 +59,14 @@
         <input type="radio" id="agama" name="agama" value="kristen">
         <label for="christian">Kristen</label>
         <input type="radio" id="agama" name="agama" value="hindu">
-        <label for="hindu">Hindu</label>
+        <label for="hindu">Hindu</label><br>
         <input type="radio" id="agama" name="agama" value="buddha">
         <label for="buddha">Buddha</label>
         <input type="radio" id="agama" name="agama" value="konghucu">
         <label for="konghucu">Konghucu</label><br>
 
         <p>Fakultas</p>
-        <select id="fakultas" name="fakultas" onchange="updateprodi()" size="1" style="width: 410px;" required>
+        <select id="fakultas" name="fakultas" onchange="updateprodi()" size="1" required>
             <option value="" disabled selected>--Pilih Fakultas--</option>
             <option value="FH">Fakultas Hukum</option>
             <option value="FISIP">Fakultas Ilmu Sosial dan Politik</option>
@@ -79,12 +79,12 @@
             <option value="FK">Fakultas Kedokteran</option>
         </select>
         <p>Program Studi</p>
-        <select id="prodi" name="prodi" size="1" style="width: 410px;" required>
+        <select id="prodi" name="prodi" size="1"  required>
             <option value="" disabled selected>--Pilih Program Studi--</option>
             
         </select> 
         <p>Semester</p>
-        <td><select id="semester" name="semester" size="1" style="width: 410px;" required>
+        <td><select id="semester" name="semester" size="1"  required>
             <option value="" disabled selected>--Pilih Semester--</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -101,9 +101,9 @@
         <input type="text" id="hobi" name="hobi" size="30" maxlength="50" placeholder="Masukkan hobi Anda" required>
         <p>Cita-cita</p>
         <input type="text" id="cita_cita" name="cita_cita" size="30" maxlength="50" placeholder="Masukkan cita-cita Anda" required>
-        <div class="btn-con"> 
+
         <p><button type="submit" class="submit-button"><strong> SIMPAN</strong></button></p>
-        </div>
+        
     </div>
 </div>
 <br>
