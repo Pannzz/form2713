@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Personal Information</title>  
+    <link rel="stylesheet" href="formcss.css">
+    
+
+</head> 
+<body>
+    <br>
+    <div class="container2" align="center">
+    <h2 align="center" >PERSONAL INFORMATION </h2>
+
+<div class="inside">
+        <p style="margin-bottom: 3px;">Nama Lengkap</p>
+        <input type="text" id="nama" name="nama" size="30" maxlength="50" placeholder="Nama Lengkap" required></td>
+    
+    
+        <p style="margin-bottom: 3px">NIM</p>
+        <input type="text" id="NIM" name="NIM" size="30" maxlength="15" placeholder="Nomor Induk Mahasiswa" required></td>
+    
+        <div class="grid">
+        <p style="margin-bottom: 3px">Tempat Lahir</p>
+        <p style="margin-bottom: 3px">Tanggal Lahir</p>
+
+        <select id="kota" name="kota" size="1" style="width: 150px" required>
+            <option value="" disabled selected>--Pilih Kota--</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="surabaya">Surabaya</option>
+            <option value="bandung">Bandung</option>
+            <option value="sidoarjo">Sidoarjo</option>
+        </select>
+        <input type="date" id="tgl_lahir" name="tgl_lahir" style="width:150px" required>
+        </div>
+    
+        <p style="margin-bottom: 3px">Jenis Kelamin</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Perempuan</label></p>
+        
+        <p>Alamat</p>
+        <input type="text" id="alamat" name="alamat" size="30" maxlength="50" placeholder="Masukkan alamat Anda" required>
+    
+    
+        <p>No. Telepon</p>
+        <input type="tel" id="telepon" name="telepon" size="30" maxlength="50" placeholder="Masukkan telepon Anda" required>
+    
+    
+        <p>Email</p>
+        <input type="email" id="email" name="email" size="30" placeholder="Example@domain.com" required>
+    
+    
+        <p>Agama</p>     
+        <input type="radio" id="agama" name="agama" value="islam">
+        <label for="islam">Islam</label>
+        <input type="radio" id="agama" name="agama" value="kristen">
+        <label for="christian">Kristen</label>
+        <input type="radio" id="agama" name="agama" value="hindu">
+        <label for="hindu">Hindu</label>
+        <input type="radio" id="agama" name="agama" value="buddha">
+        <label for="buddha">Buddha</label>
+        <input type="radio" id="agama" name="agama" value="konghucu">
+        <label for="konghucu">Konghucu</label><br>
+
+        <p>Fakultas</p>
+        <select id="fakultas" name="fakultas" onchange="updateprodi()" size="1" style="width: 410px;" required>
+            <option value="" disabled selected>--Pilih Fakultas--</option>
+            <option value="FH">Fakultas Hukum</option>
+            <option value="FISIP">Fakultas Ilmu Sosial dan Politik</option>
+            <option value="FEB">Fakultas Ekonomi dan Bisnis</option>
+            <option value="FT">Fakultas Teknik</option>
+            <option value="FTEIC">Fakultas Teknologi Elektro dan Informatika Cerdas</option>
+            <option value="FPSI">Fakultas Psikologi</option>
+            <option value="FIB">Fakultas Ilmu Budaya</option>
+            <option value="FTT">Fakultas Teknologi terapan</option>
+            <option value="FK">Fakultas Kedokteran</option>
+        </select>
+        <p>Program Studi</p>
+        <select id="prodi" name="prodi" size="1" style="width: 410px;" required>
+            <option value="" disabled selected>--Pilih Program Studi--</option>
+            
+        </select> 
+        <p>Semester</p>
+        <td><select id="semester" name="semester" size="1" style="width: 410px;" required>
+            <option value="" disabled selected>--Pilih Semester--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <p>Tahun Masuk</p>
+        <input type="text" id="tahun_masuk" name="tahun_masuk" size="30" maxlength="50" placeholder="Masukkan tahun masuk Anda" required>
+        <p>Hobi</p>
+        <input type="text" id="hobi" name="hobi" size="30" maxlength="50" placeholder="Masukkan hobi Anda" required>
+        <p>Cita-cita</p>
+        <input type="text" id="cita_cita" name="cita_cita" size="30" maxlength="50" placeholder="Masukkan cita-cita Anda" required>
+        <div class="btn-con"> 
+        <p><button type="submit" class="submit-button"><strong> SIMPAN</strong></button></p>
+        </div>
+    </div>
+</div>
+<br>
+<script src="form.js"></script>
+</body>
+</html>
