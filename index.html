@@ -53,17 +53,23 @@
         <input type="email" id="email" name="email" size="30" placeholder="Example@domain.com" required>
     
     
-        <p>Agama</p>     
-        <input type="radio" id="agama" name="agama" value="islam">
-        <label for="islam">Islam</label>
-        <input type="radio" id="agama" name="agama" value="kristen">
-        <label for="christian">Kristen</label>
-        <input type="radio" id="agama" name="agama" value="hindu">
-        <label for="hindu">Hindu</label><br>
-        <input type="radio" id="agama" name="agama" value="buddha">
-        <label for="buddha">Buddha</label>
-        <input type="radio" id="agama" name="agama" value="konghucu">
-        <label for="konghucu">Konghucu</label><br>
+        <p>Agama</p>  
+        <table border="0"   > 
+            <tr>  
+        <td><input type="radio" id="agama" name="agama" value="islam">
+        <label for="islam">Islam</label></td>
+        <td><input type="radio" id="agama" name="agama" value="kristen">
+        <label for="christian">Kristen</label></td>
+        <td><input type="radio" id="agama" name="agama" value="hindu">
+        <label for="hindu">Hindu</label></td>
+        </tr>
+        <tr>
+        <td><input type="radio" id="agama" name="agama" value="buddha">
+        <label for="buddha">Buddha</label></td>
+        <td><input type="radio" id="agama" name="agama" value="konghucu">
+        <label for="konghucu">Konghucu</label></td>
+        </tr>
+        </table><br>
 
         <p>Fakultas</p>
         <select id="fakultas" name="fakultas" onchange="updateprodi()" size="1" required>
@@ -84,7 +90,7 @@
             
         </select> 
         <p>Semester</p>
-        <td><select id="semester" name="semester" size="1"  required>
+        <select id="semester" name="semester" size="1" onchange="if(this.value=='kustom'){let hasil = prompt('Masukkan Semester Anda:'); if(hasil){ const opt = document.createElement('option'); opt.value = hasil; opt.text = hasil; this.add(opt); this.value = hasil;} else{this.value='  ';}}" required>
             <option value="" disabled selected>--Pilih Semester--</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -94,6 +100,7 @@
             <option value="6">6</option>
             <option value="7">7</option>
             <option value="8">8</option>
+            <option value="kustom">lainnya</option>
         </select>
         <p>Tahun Masuk</p>
         <input type="text" id="tahun_masuk" name="tahun_masuk" size="30" maxlength="50" placeholder="Masukkan tahun masuk Anda" required>
