@@ -68,21 +68,20 @@ body {
     }
     input[type="text"], input[type="date"],  input[type="email"], input[type="tel"], input[type="number"], select {
       width: 100%;
+      max-width: 410px;
       padding: 8px;
       margin-bottom: 10px;
       border: 1px solid #ccc;
       border-radius: 4px;  
       box-sizing: border-box;
     }
-    .btn-con{
-      display:flex;
-    padding-left: 133px;
-    }
     .submit-button{
-      width: 150px;
+      width: 100%;
+      padding: 10px;
+      max-width: 550%;
       height: 40px;
       border-width: 1px;
-      border-radius: 10px;
+      border-radius: 5px;
       background: #40fa4a;
       cursor:pointer;
     }
