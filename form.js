@@ -18,7 +18,17 @@ function updateprodi(){
         FTEIC: [{ value: "TE", text: "Teknik Elektro" },
             { value: "TI", text: "Teknik Informatika" },
             { value: "SISTEKIN", text: "Sistem dan Teknologi Informasi " },
-            { value: "AERO", text: "Aeronautika" },]
+            { value: "AERO", text: "Aeronautika" },],
+        FPSI: [{ value: "PSI", text: "Psikologi" },],
+        FIB : [{ value: "SI", text: "Sastra Inggris"},
+            { value: "SJ", text: "Sastra Jepang"},],
+        FTT : [{ value: "TRM", text: "Teknologi Rekayasa Manufaktur"},
+            { value: "TRO", text: "Teknologi Rekayasa Otomasi"},
+            { value: "AI", text: "Agroindustri"},],
+        FK : [{ value: "K", text: "Kedokteran"},
+            { value: "PPD", text: "Pendidikan Profesi Dokter"},],
+        
+            
     };
     prodiselect.innerHTML = '<option value="" disabled selected>--Pilih Prodi--</option>';
 
