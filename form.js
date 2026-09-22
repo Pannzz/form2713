@@ -1,4 +1,4 @@
-function updateprodi(){
+function aupdateprodi(){
     const fakultasselect = document.getElementById('fakultas');
     const prodiselect = document.getElementById('prodi');
     const fakultasterpilih = fakultasselect.value;
